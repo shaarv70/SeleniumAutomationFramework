@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-13T00:21:20 IST" name="Suite" finished-at="2023-12-13T00:22:00 IST" duration-ms="40118">
+  <suite started-at="2024-01-25T22:31:07 IST" name="Suite" finished-at="2024-01-25T22:31:17 IST" duration-ms="9680">
     <groups>
     </groups>
-    <test started-at="2023-12-13T00:21:20 IST" name="Test" finished-at="2023-12-13T00:22:00 IST" duration-ms="40118">
-      <class name="com.as.tests.HomepageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.as.tests.HomepageTest@2e385cce]" started-at="2023-12-13T00:21:20 IST" name="setup" finished-at="2023-12-13T00:21:38 IST" duration-ms="17960" status="PASS">
+    <test started-at="2024-01-25T22:31:07 IST" name="Test" finished-at="2024-01-25T22:31:17 IST" duration-ms="9680">
+      <class name="com.as.tests.AmazonTest">
+        <test-method is-config="true" signature="setup([Ljava.lang.Object;)[pri:0, instance:com.as.tests.AmazonTest@245b4bdc]" started-at="2024-01-25T22:31:08 IST" name="setup" finished-at="2024-01-25T22:31:12 IST" duration-ms="4541" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1b005a0b]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Test3()[pri:0, instance:com.as.tests.HomepageTest@2e385cce]" started-at="2023-12-13T00:21:38 IST" name="Test3" finished-at="2023-12-13T00:22:00 IST" duration-ms="22031" status="PASS">
+        <test-method signature="amazonTest(java.util.Map)[pri:0, instance:com.as.tests.AmazonTest@245b4bdc]" started-at="2024-01-25T22:31:12 IST" name="amazonTest" description="to check whether the amazon test is working fine or not" data-provider="getData" finished-at="2024-01-25T22:31:17 IST" duration-ms="4298" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{testname=amazonTest, execute=yes, browser=chrome, username=, password=, fname=, menutext=Laptops}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.as.tests.HomepageTest@2e385cce]" started-at="2023-12-13T00:22:00 IST" name="tearDown" finished-at="2023-12-13T00:22:00 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.as.tests.HomepageTest -->
-      <class name="com.as.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.as.tests.LoginPageTest@771a660]" started-at="2023-12-13T00:21:20 IST" name="setup" finished-at="2023-12-13T00:21:37 IST" duration-ms="17334" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test1()[pri:0, instance:com.as.tests.LoginPageTest@771a660]" started-at="2023-12-13T00:21:37 IST" name="test1" finished-at="2023-12-13T00:21:38 IST" duration-ms="829" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.as.tests.LoginPageTest@771a660]" started-at="2023-12-13T00:21:38 IST" name="tearDown" finished-at="2023-12-13T00:21:38 IST" duration-ms="8" status="PASS">
+        </test-method> <!-- amazonTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.as.tests.AmazonTest@245b4bdc]" started-at="2024-01-25T22:31:17 IST" name="tearDown" finished-at="2024-01-25T22:31:17 IST" duration-ms="257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.as.tests.LoginPageTest -->
+      </class> <!-- com.as.tests.AmazonTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
