@@ -10,6 +10,7 @@ import org.testng.ITestResult;
 import com.as.annotations.FrameworkAnnotation;
 import com.as.reports.ExtentLogger;
 import com.as.reports.ExtentReport;
+import com.as.utils.ELKUtils;
 
 public class ListenerClass implements ITestListener , ISuiteListener
 {
@@ -18,6 +19,7 @@ public class ListenerClass implements ITestListener , ISuiteListener
 	public void onStart(ISuite suite) {
 		
 			ExtentReport.initReports();
+			ELKUtils.deleteIndex();
 	
 	}
 
@@ -32,6 +34,7 @@ public class ListenerClass implements ITestListener , ISuiteListener
 
 	@Override
 	public void onTestStart(ITestResult result) {
+		
 		ExtentReport.createTest(result.getMethod().getDescription());
 	    ExtentReport.addAuthors(result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(FrameworkAnnotation.class).author());
 	    ExtentReport.addCategory(result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(FrameworkAnnotation.class).category());    
@@ -41,30 +44,23 @@ public class ListenerClass implements ITestListener , ISuiteListener
 	public void onTestSuccess(ITestResult result) {
 		
 		ExtentLogger.pass(result.getMethod().getMethodName()+" is passed");
+		ELKUtils.sendDetailsTOELK(result.getMethod().getDescription(), "pass");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		
-		try {
-			ExtentLogger.fail(result.getMethod().getMethodName()+" is failed",true);
+		    ExtentLogger.fail(result.getMethod().getMethodName()+" is failed",true);
 			ExtentLogger.fail(result.getThrowable().toString());
 			ExtentLogger.fail(Arrays.toString(result.getThrowable().getStackTrace()));
-		} catch (Exception e) {
-			
-			e.printStackTrace();
-		}
+			ELKUtils.sendDetailsTOELK(result.getMethod().getDescription(), "fail");
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		
-		try {
-			ExtentLogger.skipped(result.getMethod().getMethodName()+" is skipped", true);
-		} catch (Exception e) {
-			
-			e.printStackTrace();
-		}
+	ExtentLogger.skipped(result.getMethod().getMethodName()+" is skipped", true);
+	ELKUtils.sendDetailsTOELK(result.getMethod().getDescription(), "skipped");	
 	}
 
 	@Override

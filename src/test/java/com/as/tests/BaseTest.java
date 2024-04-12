@@ -31,7 +31,7 @@ public class BaseTest {
 	protected void setup(Object[] data) {         // Since this will be used by all child classes so we cannot make it private 
       Map<String,String> mymap=(Map<String,String>)data[0];
 		
-		Driver.initDriver(mymap.get("browser"));
+		Driver.initDriver(mymap.get("browser"),mymap.get("version"));
 		
 	}
 

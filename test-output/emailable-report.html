@@ -9,10 +9,165 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9,680</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">0</td><td class="num">61,418</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.as.tests.AmazonTest</td><td><a href="#m0">amazonTest</a></td><td rowspan="1">1706202072762</td><td rowspan="1">4298</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="3">com.as.tests.OrangeHRMTest</td><td><a href="#m0">setup</a></td><td rowspan="3">1708196907609</td><td rowspan="3">56689</td></tr><tr class="failedeven"><td><a href="#m1">setup</a></td></tr><tr class="failedeven"><td><a href="#m2">setup</a></td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">com.as.tests.OrangeHRMTest</td><td><a href="#m3">loginLogoutTest</a></td><td rowspan="2">1708196964430</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m4">loginLogoutTest</a></td></tr><tr class="skippedeven"><td><a href="#m5">newTest</a></td><td rowspan="1">1708196964430</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.as.tests.AmazonTest#amazonTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{testname=amazonTest, execute=yes, browser=chrome, username=, password=, fname=, menutext=Laptops}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.as.tests.OrangeHRMTest#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[{testname=loginLogouttest, execute=yes, browser=chrome, version=83.0, username=Admin, password=YWRtaW4xMjM=, fname=dhoni, menutext=}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: wait: http://172.17.0.6:4444/ does not respond in 30s 
+Host info: host: &apos;ARVIND&apos;, ip: &apos;172.25.16.1&apos;
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 83.0, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}, selenoid:options: {enableVNC: true, enableVideo: false, env: [TZ=UTC], labels: {manual: true}, name: test 1, sessionTimeout: 15m}}]}]
+Capabilities {browserName: chrome, browserVersion: 83.0, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}, selenoid:options: {enableVNC: true, enableVideo: false, env: [TZ=UTC], labels: {manual: true}, name: test 1, sessionTimeout: 15m}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:134)
+	at com.as.factories.DriverFactory.getDriver(DriverFactory.java:50)
+	at com.as.driver.Driver.initDriver(Driver.java:48)
+	at com.as.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.as.tests.OrangeHRMTest#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[{testname=newtest, execute=yes, browser=chrome, version=83.0, username=Admin, password=YWRtaW4xMjM=, fname=, menutext=}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: wait: http://172.17.0.4:4444/ does not respond in 30s 
+Host info: host: &apos;ARVIND&apos;, ip: &apos;172.25.16.1&apos;
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 83.0, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}, selenoid:options: {enableVNC: true, enableVideo: false, env: [TZ=UTC], labels: {manual: true}, name: test 1, sessionTimeout: 15m}}]}]
+Capabilities {browserName: chrome, browserVersion: 83.0, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}, selenoid:options: {enableVNC: true, enableVideo: false, env: [TZ=UTC], labels: {manual: true}, name: test 1, sessionTimeout: 15m}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:134)
+	at com.as.factories.DriverFactory.getDriver(DriverFactory.java:50)
+	at com.as.driver.Driver.initDriver(Driver.java:48)
+	at com.as.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.as.tests.OrangeHRMTest#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[{testname=loginLogouttest, execute=yes, browser=chrome, version=83.0, username=Admin, password=YWRtaW4xMjM=, fname=sachin, menutext=}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: wait: http://172.17.0.5:4444/ does not respond in 30s 
+Host info: host: &apos;ARVIND&apos;, ip: &apos;172.25.16.1&apos;
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 83.0, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}, selenoid:options: {enableVNC: true, enableVideo: false, env: [TZ=UTC], labels: {manual: true}, name: test 1, sessionTimeout: 15m}}]}]
+Capabilities {browserName: chrome, browserVersion: 83.0, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}, selenoid:options: {enableVNC: true, enableVideo: false, env: [TZ=UTC], labels: {manual: true}, name: test 1, sessionTimeout: 15m}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:134)
+	at com.as.factories.DriverFactory.getDriver(DriverFactory.java:50)
+	at com.as.driver.Driver.initDriver(Driver.java:48)
+	at com.as.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.as.tests.OrangeHRMTest#loginLogoutTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{testname=loginLogouttest, execute=yes, browser=chrome, version=83.0, username=Admin, password=YWRtaW4xMjM=, fname=dhoni, menutext=}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: wait: http://172.17.0.6:4444/ does not respond in 30s 
+Host info: host: &apos;ARVIND&apos;, ip: &apos;172.25.16.1&apos;
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 83.0, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}, selenoid:options: {enableVNC: true, enableVideo: false, env: [TZ=UTC], labels: {manual: true}, name: test 1, sessionTimeout: 15m}}]}]
+Capabilities {browserName: chrome, browserVersion: 83.0, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}, selenoid:options: {enableVNC: true, enableVideo: false, env: [TZ=UTC], labels: {manual: true}, name: test 1, sessionTimeout: 15m}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:134)
+	at com.as.factories.DriverFactory.getDriver(DriverFactory.java:50)
+	at com.as.driver.Driver.initDriver(Driver.java:48)
+	at com.as.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.as.tests.OrangeHRMTest#loginLogoutTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{testname=loginLogouttest, execute=yes, browser=chrome, version=83.0, username=Admin, password=YWRtaW4xMjM=, fname=sachin, menutext=}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: wait: http://172.17.0.6:4444/ does not respond in 30s 
+Host info: host: &apos;ARVIND&apos;, ip: &apos;172.25.16.1&apos;
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 83.0, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}, selenoid:options: {enableVNC: true, enableVideo: false, env: [TZ=UTC], labels: {manual: true}, name: test 1, sessionTimeout: 15m}}]}]
+Capabilities {browserName: chrome, browserVersion: 83.0, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}, selenoid:options: {enableVNC: true, enableVideo: false, env: [TZ=UTC], labels: {manual: true}, name: test 1, sessionTimeout: 15m}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:134)
+	at com.as.factories.DriverFactory.getDriver(DriverFactory.java:50)
+	at com.as.driver.Driver.initDriver(Driver.java:48)
+	at com.as.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.as.tests.OrangeHRMTest#newTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{testname=newtest, execute=yes, browser=chrome, version=83.0, username=Admin, password=YWRtaW4xMjM=, fname=, menutext=}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: wait: http://172.17.0.6:4444/ does not respond in 30s 
+Host info: host: &apos;ARVIND&apos;, ip: &apos;172.25.16.1&apos;
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 83.0, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}, selenoid:options: {enableVNC: true, enableVideo: false, env: [TZ=UTC], labels: {manual: true}, name: test 1, sessionTimeout: 15m}}]}]
+Capabilities {browserName: chrome, browserVersion: 83.0, goog:chromeOptions: {args: [--remote-allow-origins=*], extensions: []}, selenoid:options: {enableVNC: true, enableVideo: false, env: [TZ=UTC], labels: {manual: true}, name: test 1, sessionTimeout: 15m}}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:227)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:134)
+	at com.as.factories.DriverFactory.getDriver(DriverFactory.java:50)
+	at com.as.driver.Driver.initDriver(Driver.java:48)
+	at com.as.tests.BaseTest.setup(BaseTest.java:34)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

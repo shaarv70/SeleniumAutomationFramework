@@ -1,0 +1,66 @@
+version: '3'
+services:
+  hub:
+    image: selenium/hub:4.10
+    ports:
+    - 4444:4444
+    restart: always
+  chrome:
+    image: selenium/node-chrome:105.0
+    shm_size: '2g'
+    depends_on:
+    - hub
+    environment:
+    - SE_EVENT_BUS_HOST=hub
+    - SE_EVENT_BUS_PUBLISH_PORT=4442
+    - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+    - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+    - SE_NODE_MAX_SESSIONS=1
+    - SE_VNC_NO_PASSWORD=1
+    restart: on-failure:3  
+  firefox:
+    image: selenium/node-firefox:4.10
+    shm_size: '2g'
+    depends_on:
+    - hub
+    environment:
+    - SE_EVENT_BUS_HOST=hub    
+    - SE_EVENT_BUS_PUBLISH_PORT=4442
+    - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+    - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+    - SE_NODE_MAX_SESSIONS=2
+    - SE_VNC_NO_PASSWORD=1
+    restart: on-failure:3
+  chrome_119:
+    image: selenium/node-chrome:for-chromedriver-119.0.6045.105
+    shm_size: '2g'
+    depends_on:
+    - hub
+    environment:
+    - SE_EVENT_BUS_HOST=hub
+    - SE_EVENT_BUS_PUBLISH_PORT=4442
+    - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+    - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+    - SE_NODE_MAX_SESSIONS=1
+    - SE_VNC_NO_PASSWORD=1
+    restart: on-failure:3    
+  elasticsearch:
+     image: docker.elastic.co/elasticsearch/elasticsearch:7.11.1
+     depends_on:
+     - hub
+     environment:
+     - discovery.type=single-node
+     ports:
+     - 9200:9200
+     - 9300:9300
+  kibana: 
+      image: docker.elastic.co/kibana/kibana:7.11.1
+      depends_on: 
+      - elasticsearch
+      links:
+      - elasticsearch:elasticsearch
+      ports:
+      - 5601:5601
+         
+      
+    

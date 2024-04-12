@@ -5,6 +5,8 @@ import java.util.Map;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
+import com.as.annotations.FrameworkAnnotation;
+import com.as.enums.Category;
 import com.as.pages.OrangeHRMLoginPage;
 
 public class OrangeHRMTest extends BaseTest {
@@ -14,6 +16,7 @@ public class OrangeHRMTest extends BaseTest {
 
 	}
 
+	@FrameworkAnnotation(author = { "Arvind","Sachin" }, category = {Category.REGRESSION,Category.SMOKE})
 	@Test
     public void loginLogoutTest(Map<String,String> mymap)
 	{
@@ -27,6 +30,7 @@ public class OrangeHRMTest extends BaseTest {
 
 	}
 	
+	@FrameworkAnnotation(author = { "Arvind","Sachin" }, category = {Category.REGRESSION,Category.SMOKE})
 	@Test
 	 public void newTest(Map<String,String> mymap)
 		{
