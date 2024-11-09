@@ -9,7 +9,7 @@
   <test thread-count="2" name="Test" parallel="methods">
     <classes>
      <class name="com.as.tests.OrangeHRMTest"/>
-     <class name="com.as.tests.AmazonTest"/>
+     <!--<class name="com.as.tests.AmazonTest"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 10 23:30:20 IST 2024</td>
+<td>Started on:</td><td>Sat Oct 12 15:26:19 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (20 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (48 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,11 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.as.tests.OrangeHRMTest.loginLogoutTest()'><b>loginLogoutTest</b><br>Test class: com.as.tests.OrangeHRMTest</td>
+<td title='com.as.tests.AmazonTest.amazonTest()'><b>amazonTest</b><br>Test class: com.as.tests.AmazonTest</td>
 <td><div><pre>org.testng.TestNGException: 
-Method public void com.as.tests.OrangeHRMTest.loginLogoutTest(java.lang.String,java.lang.String) requires a @DataProvider named : getdata
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:561)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:772)
+Cannot inject @Test annotated Method [amazonTest] with [interface java.util.Map].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
 	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
 	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
@@ -87,7 +90,7 @@ Method public void com.as.tests.OrangeHRMTest.loginLogoutTest(java.lang.String,j
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
@@ -101,13 +104,16 @@ Method public void com.as.tests.OrangeHRMTest.loginLogoutTest(java.lang.String,j
 	at org.testng.TestNG.runSuites(TestNG.java:1063)
 	at org.testng.TestNG.run(TestNG.java:1031)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1229161065", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1229161065'><pre>org.testng.TestNGException: 
-Method public void com.as.tests.OrangeHRMTest.loginLogoutTest(java.lang.String,java.lang.String) requires a @DataProvider named : getdata
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:561)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:772)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace959629210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace959629210'><pre>org.testng.TestNGException: 
+Cannot inject @Test annotated Method [amazonTest] with [interface java.util.Map].
+For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
 	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
 	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
@@ -115,7 +121,7 @@ Method public void com.as.tests.OrangeHRMTest.loginLogoutTest(java.lang.String,j
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
@@ -129,11 +135,11 @@ Method public void com.as.tests.OrangeHRMTest.loginLogoutTest(java.lang.String,j
 	at org.testng.TestNG.runSuites(TestNG.java:1063)
 	at org.testng.TestNG.run(TestNG.java:1031)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.as.tests.OrangeHRMTest@7fa98a66</td></tr>
+<td>com.as.tests.AmazonTest@5ab956d7</td></tr>
 </table><p>
 </body>
 </html>
